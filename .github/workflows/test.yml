@@ -31,3 +31,8 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+
+    - uses: shivammathur/setup-php@v1
+      with:
+        php-version: 7.2
+        coverage: pcov # disable xdebug, pcov
